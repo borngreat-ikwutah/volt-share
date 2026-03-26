@@ -80,10 +80,10 @@ export default function RoleToggle() {
               <span className="inline-flex items-center rounded-full bg-[#10b981]/10 px-4 py-1.5 text-sm font-bold tracking-wide text-[#10b981] mb-6 uppercase">
                 {activeContent.tag}
               </span>
-              <h2 className="font-display text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl mb-6">
+              <h2 className="font-display text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl mb-6">
                 {activeContent.title}
               </h2>
-              <p className="text-lg text-slate-600 font-sans mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg text-slate-600 font-sans mb-8 leading-relaxed">
                 {activeContent.description}
               </p>
 

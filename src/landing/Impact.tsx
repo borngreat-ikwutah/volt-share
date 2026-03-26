@@ -37,17 +37,17 @@ export default function Impact() {
             Our Community Impact
           </p>
           <div className="flex justify-center items-baseline font-display font-extrabold text-[#10b981]">
-            <span className="text-3xl sm:text-5xl md:text-6xl mr-2 sm:mr-4">
+            <span className="text-2xl sm:text-5xl md:text-6xl mr-2 sm:mr-4">
               ₦
             </span>
-            <span className="text-6xl sm:text-8xl md:text-9xl tracking-tighter">
+            <span className="text-5xl sm:text-8xl md:text-9xl tracking-tighter">
               {creditCount.toLocaleString()}
             </span>
-            <span className="text-3xl sm:text-5xl md:text-6xl ml-2 sm:ml-4">
+            <span className="text-2xl sm:text-5xl md:text-6xl ml-2 sm:ml-4">
               +
             </span>
           </div>
-          <p className="mt-6 text-xl sm:text-2xl text-slate-600 font-sans font-medium">
+          <p className="mt-6 text-base sm:text-2xl text-slate-600 font-sans font-medium">
             in Energy Credits distributed by the VoltShare network.
           </p>
         </div>

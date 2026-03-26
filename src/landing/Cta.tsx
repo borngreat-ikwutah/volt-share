@@ -10,11 +10,11 @@ export default function Cta() {
       <div className="pointer-events-none absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-black/5 blur-[80px]" />
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-7xl mb-8 drop-shadow-sm">
+        <h2 className="font-display text-3xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-7xl mb-8 drop-shadow-sm">
           Never sit in the dark again.
         </h2>
 
-        <p className="mx-auto max-w-2xl text-lg sm:text-xl text-emerald-50 mb-10 font-sans font-medium">
+        <p className="mx-auto max-w-2xl text-base sm:text-xl text-emerald-50 mb-10 font-sans font-medium">
           Get instant electricity tokens and pay over time with our seamless
           Interswitch-powered credit system.
         </p>

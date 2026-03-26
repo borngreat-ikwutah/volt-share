@@ -2,13 +2,13 @@ import { Button } from '../components/ui/button'
 
 export default function Hero() {
   return (
-    <section className="bg-background pt-20 sm:pt-32">
+    <section className="bg-background pt-16 sm:pt-32">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="font-display text-5xl font-extrabold tracking-tight text-foreground sm:text-7xl lg:text-[5rem] lg:leading-[1.05] mb-6">
+        <h1 className="font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-6xl lg:text-[5rem] lg:leading-[1.05] mb-6">
           Powering is the new sharing
         </h1>
 
-        <p className="mx-auto max-w-3xl text-lg sm:text-xl text-muted-foreground font-sans font-medium mb-10">
+        <p className="mx-auto max-w-3xl text-base sm:text-xl text-muted-foreground font-sans font-medium mb-10">
           An energy credit system that allows users to get electricity instantly
           and repay over time using Interswitch-powered payments.
         </p>

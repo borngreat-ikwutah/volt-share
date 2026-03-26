@@ -25,12 +25,12 @@ export default function Pillars() {
   return (
     <section className="bg-white py-16 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 lg:mb-20">
-          <h2 className="font-display text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+        <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+          <h2 className="font-display text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
             Power your life today, <br className="hidden sm:block" />
             pay tomorrow.
           </h2>
-          <p className="mt-4 text-lg text-slate-600 font-sans max-w-2xl mx-auto">
+          <p className="mt-4 text-base sm:text-lg text-slate-600 font-sans max-w-2xl mx-auto">
             Experience the freedom of uninterrupted electricity with our
             flexible, Interswitch-powered energy credit system.
           </p>
@@ -48,10 +48,10 @@ export default function Pillars() {
                   strokeWidth={2.5}
                 />
               </div>
-              <h3 className="font-display text-2xl font-bold text-slate-900 mb-4">
+              <h3 className="font-display text-xl sm:text-2xl font-bold text-slate-900 mb-4">
                 {pillar.title}
               </h3>
-              <p className="text-slate-600 font-sans text-lg leading-relaxed">
+              <p className="text-slate-600 font-sans text-base sm:text-lg leading-relaxed">
                 {pillar.description}
               </p>
             </div>
