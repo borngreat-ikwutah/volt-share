@@ -9,8 +9,8 @@ export default function Hero() {
         </h1>
 
         <p className="mx-auto max-w-3xl text-lg sm:text-xl text-muted-foreground font-sans font-medium mb-10">
-          The freedom to go green without paying for expensive installations or
-          maintenance. All you need is an account and a neighborhood.
+          An energy credit system that allows users to get electricity instantly
+          and repay over time using Interswitch-powered payments.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 sm:mb-24">

@@ -1,40 +1,43 @@
 import { useState } from 'react'
-import { ArrowRight, Leaf, Coins } from 'lucide-react'
+import { ArrowRight, Zap, Coins, ShieldCheck } from 'lucide-react'
 import { Button } from '../components/ui/button'
 
 export default function RoleToggle() {
-  const [role, setRole] = useState<'creator' | 'neighbor'>('creator')
+  const [role, setRole] = useState<'consumer' | 'provider'>('consumer')
 
   const content = {
-    creator: {
-      tag: 'For Solar Owners',
-      title: 'Share your Solar. Earn passively.',
+    consumer: {
+      tag: 'For Consumers',
+      title: 'Get electricity instantly. Pay later.',
       description:
-        "Turn your roof into a continuous revenue stream. Sell your excess solar energy directly to your local community, track your earnings in real-time, and speed up the world's transition to renewable energy.",
+        'Never sit in the dark. Access electricity credits immediately when you need them most, and spread your repayments comfortably over time through seamless Interswitch integration.',
       features: [
-        { icon: Coins, text: "Get paid monthly for the energy you don't use." },
+        { icon: Zap, text: 'Instant token generation directly to your meter.' },
         {
-          icon: Leaf,
-          text: "Reduce your neighborhood's overall carbon footprint.",
+          icon: Coins,
+          text: 'Flexible, interest-friendly repayment plans that fit your schedule.',
         },
       ],
-      cta: 'Become a Creator',
+      cta: 'Get Energy Credit',
       imgUrl:
         'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=2072&auto=format&fit=crop',
     },
-    neighbor: {
-      tag: 'For Neighbors',
-      title: 'Buy Affordable Power. Go Green.',
+    provider: {
+      tag: 'For Energy Vendors',
+      title: 'Grow your utility business with credit.',
       description:
-        'Access clean, local energy without needing to install your own panels. Lower your electricity bills by connecting to neighborhood micro-grids and supporting local solar creators.',
+        'Boost your electricity sales by offering customers the ability to buy now and pay later. We handle the credit risk and settlements instantly via Interswitch.',
       features: [
-        { icon: Leaf, text: '100% renewable energy sourced from local roofs.' },
+        {
+          icon: ShieldCheck,
+          text: 'Zero credit risk—you get settled instantly.',
+        },
         {
           icon: Coins,
-          text: 'Lower, transparent rates compared to traditional grids.',
+          text: 'Increase customer retention and sales volume effortlessly.',
         },
       ],
-      cta: 'Find Local Energy',
+      cta: 'Become a Partner',
       imgUrl:
         'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2070&auto=format&fit=crop',
     },
@@ -49,24 +52,24 @@ export default function RoleToggle() {
           {/* Toggle Switch */}
           <div className="relative flex rounded-full bg-slate-200/60 p-1.5 mb-12 sm:mb-20 shadow-inner">
             <button
-              onClick={() => setRole('creator')}
+              onClick={() => setRole('consumer')}
               className={`relative z-10 w-40 sm:w-56 rounded-full py-3.5 text-sm font-bold transition-all duration-300 ${
-                role === 'creator'
+                role === 'consumer'
                   ? 'text-slate-900 bg-white shadow-[0_4px_12px_rgba(0,0,0,0.05)]'
                   : 'text-slate-500 hover:text-slate-700'
               }`}
             >
-              Share your Solar
+              For Consumers
             </button>
             <button
-              onClick={() => setRole('neighbor')}
+              onClick={() => setRole('provider')}
               className={`relative z-10 w-40 sm:w-56 rounded-full py-3.5 text-sm font-bold transition-all duration-300 ${
-                role === 'neighbor'
+                role === 'provider'
                   ? 'text-slate-900 bg-white shadow-[0_4px_12px_rgba(0,0,0,0.05)]'
                   : 'text-slate-500 hover:text-slate-700'
               }`}
             >
-              Buy Affordable Power
+              For Vendors
             </button>
           </div>
 

@@ -2,23 +2,23 @@ import { useEffect, useState } from 'react'
 import { ShieldCheck } from 'lucide-react'
 
 export default function Impact() {
-  const [co2Count, setCo2Count] = useState(0)
-  const targetCo2 = 1428570 // Example target number
+  const [creditCount, setCreditCount] = useState(0)
+  const targetCredit = 1428570 // Example target number
 
   // Simple counting animation
   useEffect(() => {
     let start = 0
     const duration = 2500 // 2.5 seconds
     const interval = 16 // ~60fps
-    const increment = targetCo2 / (duration / interval)
+    const increment = targetCredit / (duration / interval)
 
     const timer = setInterval(() => {
       start += increment
-      if (start >= targetCo2) {
-        setCo2Count(targetCo2)
+      if (start >= targetCredit) {
+        setCreditCount(targetCredit)
         clearInterval(timer)
       } else {
-        setCo2Count(Math.floor(start))
+        setCreditCount(Math.floor(start))
       }
     }, interval)
 
@@ -37,15 +37,18 @@ export default function Impact() {
             Our Community Impact
           </p>
           <div className="flex justify-center items-baseline font-display font-extrabold text-[#10b981]">
+            <span className="text-3xl sm:text-5xl md:text-6xl mr-2 sm:mr-4">
+              ₦
+            </span>
             <span className="text-6xl sm:text-8xl md:text-9xl tracking-tighter">
-              {co2Count.toLocaleString()}
+              {creditCount.toLocaleString()}
             </span>
             <span className="text-3xl sm:text-5xl md:text-6xl ml-2 sm:ml-4">
-              kg
+              +
             </span>
           </div>
           <p className="mt-6 text-xl sm:text-2xl text-slate-600 font-sans font-medium">
-            of CO₂ offset so far by the VoltShare network.
+            in Energy Credits distributed by the VoltShare network.
           </p>
         </div>
 

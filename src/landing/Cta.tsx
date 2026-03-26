@@ -11,11 +11,12 @@ export default function Cta() {
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-7xl mb-8 drop-shadow-sm">
-          Ready to join the green revolution?
+          Never sit in the dark again.
         </h2>
 
         <p className="mx-auto max-w-2xl text-lg sm:text-xl text-emerald-50 mb-10 font-sans font-medium">
-          Whether you want to earn from your roof or save on your bills, VoltShare connects you to the future of energy.
+          Get instant electricity tokens and pay over time with our seamless
+          Interswitch-powered credit system.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -32,7 +33,7 @@ export default function Cta() {
             size="lg"
             className="h-14 w-full sm:w-auto rounded-full border-2 border-white/20 bg-transparent px-8 text-lg font-bold text-white transition-all hover:-translate-y-1 hover:bg-white/10 hover:border-white/30"
           >
-            Explore the Marketplace
+            Explore Credit Plans
           </Button>
         </div>
       </div>

@@ -1,4 +1,11 @@
-Welcome to your new TanStack Start app! 
+# VoltShare
+
+An energy credit system that allows users to get electricity instantly and repay over time using Interswitch-powered payments.
+
+# Team
+
+- **Frontend:** Borngreat Ikwutah
+- **Backend:** Akwabok Emek
 
 # Getting Started
 
